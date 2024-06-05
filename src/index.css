@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.loginBody{
+    background-image: url("../public/images/Background\ Image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.reset{
+    background-image: url("../public/images/GirlImage.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.transition-div {
+    opacity: 0; /* Hide the div initially */
+    transform: translateY(-20px); /* Move the div 20px up */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Add transition effects */
+}
+
+/* Apply the transition effect when the modifier class is present */
+.transition-div.transition-visible {
+    opacity: 1; /* Show the div */
+    transform: translateY(0);
+     /* Move the div back to its original position */
+}
+
+
+.input-label {
+    width: 100px; /* Adjust as needed */
+    padding: 0.5rem; /* Add padding to the labels */
+    text-align: right;
+}
+
+.input-field {
+    flex: 1; /* Fill remaining space */
+    padding: 0.5rem; /* Add padding to the inputs */
+    border: black 1px solid;
+}
